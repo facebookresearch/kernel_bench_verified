@@ -1,0 +1,82 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# CUDA / Build artifacts
+*.o
+*.cu
+*.cpp
+*.cuh
+.cuda_cache/
+build.ninja
+.ninja_deps
+.ninja_log
+
+# Results and outputs
+runs/
+results/
+*.html
+*.csv
+*.json
+!results/timing/H200/*.json
+
+# Logs
+logs/
+*.log
+error_log.txt
+
+# Personal scripts (excluded from release)
+submit_*.sh
+launch_*.sh
+monitor_*.sh
+compute_metrics.sh
+finalize_after_eval.sh
+retry_bf16_missing.sh
+run_gemini_pro_bf16_pipeline.sh
+
+# Backups
+backups/
+
+# IDE
+.vscode/
+.claude/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Judge results
+judge_results/
