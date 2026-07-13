@@ -28,6 +28,12 @@ We introduce **KernelBench-Verified**, an extended evaluation framework that inc
 
 Under verified evaluation with seven frontier LLMs, GPT-5.5 achieves **0.88×** geometric mean speedup, significantly lower than the 1.43× speedup observed under standard evaluation. No model consist [...]
 
+## Leaderboard
+
+![Memory–Speedup Tradeoff (per level)](docs/figures/mem_speedup_tradeoff.png)
+
+Each dot is one model. **X** = Correct Speedup (geomean of baseline / kernel runtime over correct problems only; higher = faster). **Y** = Memory Efficiency (geomean of baseline mem / kernel mem over correct problems only; higher = uses less GPU memory than baseline). The upper-right corner is best (fast *and* memory-efficient); dashed lines mark the 1× reference (no change vs baseline). See the full interactive [Verified Leaderboard](https://scalingintelligence.stanford.edu/kernelbenchverifiedleaderboard/).
+
 ## Framework Components
 
 ### TF32 Baseline Configuration
